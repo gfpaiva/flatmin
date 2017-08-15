@@ -1,0 +1,35 @@
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+//bootstrap
+@import "_variables";
+@import "lib/_bootstrap";
+
+//componentes
+@import "components/colorbox/_box-color.scss";
+@import "components/buttons/_buttons.scss";
+@import "components/switch/_switch.scss";
+@import "components/arrows/_arrows.scss";
+@import "components/close-plus/_close-plus.scss";
+@import "components/progress-bar/_progress-bar.scss";
+@import "components/inputs/_inputs.scss";
+@import "components/check-radio/_checkbox.scss";
+@import "components/notifications/_notification.scss";
+@import "components/tool-tip/_tool-tip.scss";
+
+
+.jumbotron{
+  background: $green;
+  color:#fff;
+}
+
+footer{
+  background: $green;
+  color:#fff;
+  margin-top: 40px;
+  padding: 15px;
+  text-align: center;
+  .fa{
+    color:$red;
+  }
+}

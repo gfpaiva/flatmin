@@ -1,0 +1,4 @@
+@import "_mixin";
+.progress-bar{
+  @include progress;
+}

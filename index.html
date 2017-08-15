@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Flat Admin componentes</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+
+      <div class="container">
+        <h2>Basic componentes</h2>
+      </div>
+    </div>
+    <!-- header -->
+    <!-- color box -->
+    <div class="container">
+      <div class="row">
+        <h2>Color Box</h2>
+        <div class="color-box color-box--green">
+          <div class="color-box--desc">
+            <h2>Green</h2>
+            <span>3db39</span>
+          </div>
+          <div class="color-box color-box_green-dark">
+
+          </div>
+          <div class="color-box color-box_green-light">
+
+          </div>
+        </div>
+        <div class="color-box color-box--red">
+          <div class="color-box--desc">
+            <h2>Red</h2>
+            <span>E2574C</span>
+          </div>
+          <div class="color-box color-box_red-dark">
+
+          </div>
+          <div class="color-box color-box_red-light">
+
+          </div>
+        </div>
+        <div class="color-box color-box--gray">
+          <div class="color-box--desc">
+            <h2>Gray</h2>
+            <span>d5d5d5</span>
+          </div>
+          <div class="color-box color-box_gray-dark">
+
+          </div>
+          <div class="color-box color-box_gray-light">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- color box -->
+    <!-- buttons -->
+    <div class="container">
+      <div class="row">
+      <div class="buttons-container">
+      <h2>Buttons</h2>
+        <div class="button--box"><!-- default -->
+          <button class="btn btn-default button button--default">Normal</button>
+        </div>
+        <div class="button--box"><!-- atencao -->
+          <button class="btn btn-default button button--danger">Atenção</button>
+        </div>
+         <div class="button--box"> <!-- prosseguir -->
+          <button class="btn btn-default button button--success">Proseguir</button>
+        </div>
+        <div class="button--box"> <!-- selecionar arquivos-->
+          <label onwaiting=""class="btn btn-default button button--default" for="file">
+          <i class="fa fa-upload" aria-hidden="true"></i>&nbsp;Selecionar Arquivos
+          <input type="file" id="file" class="button--file" value="">
+        </label>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- buttons -->
+    <!-- SWITCH -->
+    <div class="container">
+      <div class="row">
+        <h2>Swicth</h2>
+        <div class="switch-box">
+          <label class="switch">
+            <input type="checkbox" class="switch--chekbox">
+            <span class="switch--slider switch--round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+      <!-- SWITCH -->
+        <!-- arrows and close-plus -->
+      <div class="container">
+        <div class="row">
+          <h2>Arrows and Close Buttons</h2>
+          <div class="arrows arrows--box">
+            <div class="btn-group">
+               <button type="button" class="btn arrows--default arrows_border"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+               <button type="button" class="btn arrows--default arrows_border"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+             </div>
+          </div>
+          <div class="arrows arrows--box">
+            <button type="button" name="button" class="arrows arrows--default"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+          </div>
+          <div class="arrows arrows--box">
+            <button type="button" name="button" class="arrows arrows--default"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+          </div>
+          <div class="close-plus close-plus--box">
+            <button type="button" name="button" class="close-plus close-plus--close"><i class="fa fa-close" aria-hidden="true"></i></button>
+          </div>
+          <div class="close-plus close-plus--box">
+            <button type="button" name="button" class="close-plus close-plus--plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+        <!-- arrows and close-plus -->
+        <!-- progress bar -->
+        <div class="container">
+          <div class="row">
+            <h2>Progress Bar</h2>
+            <div class="progress-bar">
+              <div class="progress-bar--stage">
+                <div class="progress-bar--percent">50%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- progress bar -->
+        <!-- inputs text -->
+        <div class="container">
+          <div class="row">
+            <h2>Inputs text</h2>
+            <div class="col-md-3">
+            <div class="input-box">
+              <input type="text" name="" value="" class="form-control input--default" placeholder="Normal Input">
+            </div>
+            </div>
+            <div class="col-md-3">
+              <div class="input-box">
+                <input type="text" name="" value="" class="form-control input--default" placeholder="Disable Input" disabled="true">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="input-box">
+                <input type="text" name="" value="" class="form-control input--default input_success" placeholder="success">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="input-box">
+                <input type="text" name="" value="" class="form-control input--default input_error" placeholder="Error">
+              </div>
+            </div>
+            <h2>Text Area</h2>
+            <div class="col-md-6">
+              <textarea name="name" rows="8" cols="80" class="form-control input--default input--grabber"></textarea>
+            </div>
+            <div class="col-md-6">
+              <h2>Select and Search</h2>
+              <div class="input-box">
+                <input type="text" class="form-control input--default input_search">
+              </div>
+              <div class="input-box">
+                <select class="form-control input--default input--selectpicker" name="">
+                  <option value="">teste</option>
+                  <option value="">teste</option>
+                  <option value="">teste</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- inputs text -->
+        <!-- checkbox e radios -->
+        <div class="container">
+          <div class="row">
+            <h2>checkbox Radio Butons</h2>
+            <input class="checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+            <label for="styled-checkbox-1"></label>
+            <input class="radio" id="styled-checkbox-2" type="radio" value="value1">
+            <label for="styled-checkbox-2"></label>
+          </div>
+        </div>
+        <!-- checkbox e radios -->
+        <!-- notification -->
+          <div class="container">
+            <div class="row">
+              <h2>Notifications</h2>
+              <div class="col-md-6">
+                <div class="notifications notifications--red">
+                  <button type="button" name="button" class="close-plus close-plus--close notifications--close"><i class="fa fa-close" aria-hidden="true"></i></button>
+                    <span> <i class="fa fa-info-circle"></i> aqui e notifictions</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="notifications notifications--green">
+                  <button type="button" name="button" class="close-plus close-plus--plus notifications--close"><i class="fa fa-close" aria-hidden="true"></i></button>
+                    <span> <i class="fa fa-info-circle"></i> aqui e notifictions</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- notification -->
+        <!-- table -->
+        <div class="container">
+        <h2>Striped Rows</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+        <!-- table -->
+        <div class="container">
+          <div class="row">
+            <h2>Headings and Paragraph</h2>
+            <h1>h1 heading1</h1>
+            <h2>h2 heading1</h2>
+            <h3>h3 heading1</h3>
+            <h4>h4 heading1</h4>
+            <p>P. Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
+          </div>
+        </div>
+        <!-- tolltips -->
+        <div class="container">
+          <div class="row">
+            <h2>Tool tip</h2>
+            <div class="col-md-3">
+              <div class="tool-tip tool-tip--bottom">
+                A Little Tip
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="tool-tip tool-tip--left">
+                A Little Tip
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="tool-tip tool-tip--top">
+                A Little Tip
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="tool-tip tool-tip--right">
+                A Little Tip
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- tolltips -->
+          <footer>
+            desenvolvido com <i class="fa fa-heart"></i> por <a href="http://github.com/rogeriorioli">@rogeriorioli</a> e design por Juliana Reis
+          </footer>
+  </body>
+</html>

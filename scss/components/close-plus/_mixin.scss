@@ -1,0 +1,37 @@
+@mixin close-plus{
+    $this : &;
+    transition: all 0.4s;
+    &--box{
+      display: inline-block;
+    }
+    &--close{
+      color:#fff;
+      background: $red;
+      border:none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      &:hover{
+        background: $red-dark;
+        color:#fff;
+      }
+      &:focus{
+        outline: none;
+      }
+    }
+    &--plus{
+      color:#fff;
+      background: $green;
+      border:none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      &:hover{
+        background: $green-dark;
+        color:#fff;
+      }
+      &:focus{
+        outline: none;
+      }
+    }
+}

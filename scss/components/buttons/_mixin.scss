@@ -1,0 +1,63 @@
+@mixin buttons {
+    $this : &;
+    border:none;
+    border-radius: 0;
+    padding: 10px 20px;
+    min-width: 180px;
+    &:focus{
+      outline: none;
+    }
+    &--box{
+      display: inline-block;
+    }
+    input[type="file"]{
+      display: none;
+    }
+    &--default{
+      background: $gray;
+      border-bottom: 2px solid $gray-dark;
+      &:hover{
+        background: $gray-lighter;
+        border-bottom: 2px solid $gray;
+      }
+      &:focus{
+        background: $gray-lighter;
+        border-bottom: 2px solid $gray;
+      }
+      transition: all 0.3s;
+    }
+    &--danger{
+      background: $red;
+      border-bottom: 2px solid $red-dark;
+      color:#fff;
+      &:hover{
+        background: $red-lighter;
+        border-bottom: 2px solid $red;
+        color:#fff;
+      }
+      &:focus{
+        background: $red-lighter;
+        border-bottom: 2px solid $red;
+        color:#fff;
+      }
+      transition: all 0.3s;
+    }
+    &--success{
+      background: $green;
+      border-bottom: 2px solid $green-dark;
+      color:#fff;
+      &:hover{
+        background: $green-lighter;
+        border-bottom: 2px solid $green;
+        color:#fff;
+      }
+      &:focus{
+        background: $green-lighter;
+        border-bottom: 2px solid $green;
+        color:#fff;
+      }
+      transition: all 0.3s;
+    }
+
+
+}

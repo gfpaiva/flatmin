@@ -1,0 +1,55 @@
+@mixin switch {
+    $this : &;
+     position: relative;
+     display: inline-block;
+     width: 71px;
+     height: 34px;
+    &--chekbox{
+      display: none;
+    }
+    &--slider{
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        border: 2px solid $red;
+        -webkit-transition: .4s;
+        background: url('../img/disable-switch.jpg') no-repeat;
+        background-position: right;
+        background-position-x: 37px;
+        transition: .4s;
+        &:before{
+          position: absolute;
+          content: "";
+          height: 26px;
+          width: 26px;
+          left: 4px;
+          bottom: 2px;
+          background-color: $red;
+          -webkit-transition: .4s;
+          transition: .4s;
+          border-radius: 50%;
+        }
+    }
+    &--round{
+      border-radius: 18px;
+    }
+    input:checked + .switch--slider {
+      background: url('../img/checked-switch.jpg') no-repeat;
+      background-position: left;
+      background-position-x: 4px;
+      border: 2px solid $green;
+    }
+    input:focus + .switch--slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+    input:checked + .switch--slider:before {
+      background-color: $green;
+      -webkit-transform: translateX(32px);
+      -ms-transform: translateX(32px);
+      transform: translateX(32px);
+    }
+}

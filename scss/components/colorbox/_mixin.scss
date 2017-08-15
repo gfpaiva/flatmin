@@ -1,0 +1,90 @@
+@mixin color-box {
+    $this : &;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    float: left;
+    margin: 0px 16px 0 0;
+    position: relative;
+    $this: &;
+    &--desc{
+      width: 100%;
+      position: absolute;
+      top: 0;
+      text-align:center;
+    }
+    &--green{
+      background: $green;
+      display: flex;
+      align-items: flex-end;
+      h2{
+        color: $green-dark;
+      }
+      span{
+        color:#fff;
+        text-transform: uppercase;
+      }
+    }
+    &_green-dark{
+      background: $green-dark;
+      height: 60px;
+      width: 50%;
+      margin: 0;
+    }
+    &_green-light{
+      background: $green-lighter;
+      height: 60px;
+      width: 50%;
+      margin: 0;
+    }
+    &--red{
+      background: $red;
+      display: flex;
+      display: flex;
+      align-items: flex-end;
+      h2{
+        color: $red-dark;
+      }
+      span{
+        color:#fff;
+        text-transform: uppercase;
+      }
+    }
+    &_red-dark{
+      background: $red-dark;
+      height: 60px;
+      width: 50%;
+      margin: 0;
+    }
+    &_red-light{
+      background: $red-lighter;
+      height: 60px;
+      width: 50%;
+      margin: 0;
+    }
+    &--gray{
+      background: $gray;
+      display: flex;
+      display: flex;
+      align-items: flex-end;
+      h2{
+        color: $gray-dark
+      }
+      span{
+        color:#fff;
+        text-transform: uppercase;
+      }
+    }
+    &_gray-dark{
+      background: $gray-dark;
+      height: 60px;
+      width: 50%;
+      margin: 0;
+    }
+    &_gray-light{
+      background: $gray-lighter;
+      height: 60px;
+      width: 50%;
+      margin: 0;
+    }
+}

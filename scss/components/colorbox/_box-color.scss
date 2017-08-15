@@ -1,0 +1,4 @@
+@import "_mixin";
+.color-box{
+  @include color-box;
+}

@@ -1,0 +1,19 @@
+@mixin notification{
+    $this : &;
+    text-align: center;
+    position: relative;
+    color:#fff;
+    padding: 10px 0;
+    &--red{
+      background-color: $red;
+    }
+    &--green{
+      background-color: $green;
+    }
+    &--close{
+      position: absolute;
+      border: 2px solid #fff;
+      right: -10px;
+      top:-10px;
+      }
+    }

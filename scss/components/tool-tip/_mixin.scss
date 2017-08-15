@@ -1,0 +1,57 @@
+@mixin tool-tip {
+    $this : &;
+    width: 100%;
+    background: $gray;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    &--bottom{
+      &:before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid $gray;
+        bottom:-10px;
+      }
+    }
+    &--left{
+      &:after{
+         content: "";
+         position: absolute;
+         width: 0;
+         height: 0;
+         border-top: 10px solid transparent;
+         border-bottom: 10px solid transparent;
+        border-right:10px solid $gray;
+        left: 5px;
+      }
+    }
+    &--right{
+      &:before{
+         content: "";
+         position: absolute;
+         width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid $gray;
+        right: 5px;
+      }
+    }
+    &--top{
+      &:after{
+         content: "";
+         position: absolute;
+         width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid $gray;
+        top:-10px;
+        left: 45%;
+      }
+    }
+}

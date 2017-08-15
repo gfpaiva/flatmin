@@ -1,0 +1,4 @@
+@import "_mixin";
+.switch{
+  @include switch;
+}

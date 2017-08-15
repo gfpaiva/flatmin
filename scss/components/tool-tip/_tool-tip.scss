@@ -1,0 +1,4 @@
+@import "_mixin";
+.tool-tip{
+  @include tool-tip;
+}

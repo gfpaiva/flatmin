@@ -1,0 +1,29 @@
+@mixin arrows {
+    $this : &;
+    transition: all 0.4s;
+    &--box{
+      display: inline-block;
+    }
+    &--default{
+      color:#000;
+      background: $gray;
+      border:none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      &:hover{
+        background: $gray-dark;
+        color:#333;
+      }
+      &:focus{
+        outline: none;
+      }
+    }
+    &_border{
+      border-right: 3px solid $gray-dark;
+      border-radius: 15%;
+      &:last-child{
+        border-right:none;
+      }
+    }
+}
