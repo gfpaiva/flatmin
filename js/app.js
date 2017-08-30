@@ -3,7 +3,7 @@ Vue.component('ProgressBar', {
     percent: {
       type: Number,
       required: true,
-      validator () {
+      validator (percent) {
         return percent <= 100;
       }
     }
